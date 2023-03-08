@@ -1,7 +1,7 @@
 @ECHO OFF
 
 ECHO ***********************************************************************
-ECHO Automatizacao para fazer commits sem trocar as credenciais da maquina!!
+ECHO Automatizacao para fazer commits sem trocar as credenciais da maquina!!!
 ECHO ***********************************************************************
 
 SET /P "name=Informe seu nome: "
