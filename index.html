@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Recibo de Salário</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Emissão de recibo de salários">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Recibo, Salário">
+        <meta name="author" content="Gabriel Silva">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <h1>Recibo de Salário</h1>
+        <div>
+            <div>
+                <label style="display: block;">Valor:</label>
+                <input type="text" placeholder="00,00">
+                <h6 style="margin-top: -15px;">Valor recebido</h6>
+            </div>
+            <div>
+                <label style="display: block;">Empregado:</label>
+                <input style="width: 100%;" type="text">
+            </div>
+            <div>
+                <label style="display: block;">À titulo de:</label>
+                <input style="width: 100%;" type="text">
+                <h6 style="margin-top: -15px;">Ex.: Adiantamento salarial, assistência médica, odontológica, etc.</h6>
+            </div>
+            <div>
+                <label style="display: block;">Remuneração mensal relativa à folha do mês:</label>
+                <input style="width: 60%;" type="text" placeholder="Fevereiro 2023">
+            </div>
+            <div>
+                <label style="display: block;">Empregador:</label>
+                <input style="width: 100%;" type="text">
+            </div>
+            <div>   
+                <label style="display: block;">CPF ou CNPJ</label>
+                <input type="text" onInput="validateMask(this)">
+                <h6 style="margin-top: -15px;">Somente os números</h6>
+            </div>
+            <div>
+                <div>
+                    <label style="display: block;">Cidade:</label>
+                    <input style="width: 50%;" type="text">
+                </div>
+                <div>
+                    <label style="display: block;">Data:</label>
+                    <input style="width: 50%;" type="text">
+                </div>
+            </div>
+            <div>
+                <label style="display: block;">Forma de Pagamento:</label>
+                <input type="radio">
+                <label>Dinheiro</label>
+                <input type="radio">
+                <label>Pix</label>
+                <input type="radio">
+                <label>Cheque</label>
+                <input type="radio">
+                <label>Transferência/Depósito</label>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
