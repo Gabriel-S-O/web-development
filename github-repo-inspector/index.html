@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de repositórios no github</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Buscador de repositórios no github</h1>
+    <input type="text" id="repository" placeholder="Digite o link do repositório">
+    <input type="date" id="startDate" placeholder="Data inicial">
+    <input type="date" id="endDate" placeholder="Data final">
+    <button id="searchBtn">Pesquisar</button>
+    <div id="result">
+      <table>
+        <thead>
+          <tr>
+            <th>Autor</th>
+            <th>Repositório</th>
+            <th>Data</th>
+            <th>Mensagem</th>
+            <th>Estrelas</th>
+            <th>Forks</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
